@@ -1,0 +1,168 @@
+﻿@page "/"
+@using Data
+@inject vacunadosServices service
+
+<div class="container">
+
+    <div class="row bg-light">
+        <table class="table table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Telefono</th>
+                    <th>Fecha de nacimiento</th>
+                    <th>Tipo de vacuna</th>
+                    <th>Fecha dosis 1</th>
+                    <th>Fecha dosis 2</th>
+                    <th>Provincia</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Products.Any())
+                {
+    @foreach (var product in Products)
+    {
+<tr @onclick="(() => SetProductForUpdate(product))">
+    <td>@product.Id</td>
+    <td>@product.nombre</td>
+    <td>@product.apellido</td>
+    <td>@product.telefono</td>
+    <td>@product.fechaNacimiento</td>
+    <td>@product.tipoVacuna</td>
+    <td>@product.fecahDosis1</td>
+    <td>@product.fecahDosis2</td>
+    <td><button class="btn btn-danger" @onclick="(() => DeleteProduct(product))">Delete</button></td>
+</tr>
+} }
+else
+{
+<tr><td colspan="6"><strong>No products available</strong></td></tr>
+}
+            </tbody>
+        </table>
+    </div>
+
+    <div class="row m-5">
+        <div class="col-5 bg-light m-2 justify-content-start">
+
+            <div class="p-3 mb-3 bg-primary text-white text-center">Add New Product</div>
+
+            <EditForm Model="@NewProduct">
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" class="form-control" @bind-value="@NewProduct.nombre" />
+                </div>
+
+                <div class="form-group">
+                    <label for="price">Apellido</label>
+                    <input type="text" id="price" class="form-control" @bind="@NewProduct.apellido" />
+                </div>
+
+                <div class="form-group">
+                    <label for="quantity">Telefono</label>
+                    <input type="text" id="quantity" class="form-control" @bind="@NewProduct.telefono" />
+                </div>
+
+                <div class="form-group">
+                    <label for="Description">Fecha de nacimiento</label>
+                    <input type="text" id="Description" class="form-control" @bind="@NewProduct.fechaNacimiento" />
+                </div>
+                <div class="form-group">
+                    <label for="Description">Tipo de vacuna</label>
+                    <input type="text" id="Description" class="form-control" @bind="@NewProduct.tipoVacuna" />
+                </div>
+                <div class="form-group">
+                    <label for="Description">Fecha Dosis 1</label>
+                    <input type="text" id="Description" class="form-control" @bind="@NewProduct.fecahDosis1" />
+                </div>
+                <div class="form-group">
+                    <label for="Description">Fecha Dosis 2</label>
+                    <input type="text" id="Description" class="form-control" @bind="@NewProduct.fecahDosis2" />
+                </div>
+
+                <div class="text-center p-3 mb-3">
+                    <button class="btn btn-info" @onclick="AddNewProduct"> Add Product</button>
+                </div>
+            </EditForm>
+        </div>
+
+        <div class="col-5 bg-light m-2 justify-content-end">
+            <div class="p-3 mb-1 bg-primary text-white text-center">Update Product</div>
+
+            <EditForm Model="@UpdateProduct">
+                <div class="form-group">
+                    <label for="name">Product Name</label>
+                    <input type="text" id="name" class="form-control" @bind-value="@UpdateProduct.nombre" />
+                </div>
+
+                <div class="form-group">
+                    <label for="price">Price</label>
+                    <input type="text" id="price" class="form-control" @bind="@UpdateProduct.apellido" />
+                </div>
+
+                <div class="form-group">
+                    <label for="quantity">Quantity</label>
+                    <input type="text" id="quantity" class="form-control" @bind="@UpdateProduct.telefono" />
+                </div>
+
+                <div class="form-group">
+                    <label for="Description">Description</label>
+                    <input type="text" id="Description" class="form-control" @bind="@UpdateProduct.tipoVacuna" />
+                </div>
+                <div class="form-group">
+                    <label for="Description">Description</label>
+                    <input type="text" id="Description" class="form-control" @bind="@UpdateProduct.provincia" />
+                </div>
+
+                <div class="text-center p-3 mb-3">
+                    <button class="btn btn-info" @onclick="UpdateProductData"> Update Product</button>
+                </div>
+            </EditForm>
+        </div>
+    </div>
+
+
+</div>
+
+
+@code { List<vacunados> Products = new List<vacunados>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await RefreshProducts();
+    }
+
+    private async Task RefreshProducts()
+    {
+        Products = await service.GetProductAsync();
+    }
+
+
+    public vacunados NewProduct { get; set; } = new vacunados();
+
+    private async Task AddNewProduct()
+    {
+        await service.AddProductAsync(NewProduct);
+        NewProduct = new vacunados();
+        await RefreshProducts();
+    }
+
+    vacunados UpdateProduct = new vacunados();
+    private void SetProductForUpdate(vacunados product)
+    {
+        UpdateProduct = product;
+    }
+
+    private async Task UpdateProductData()
+    {
+        await service.UpdateProductAsync(UpdateProduct);
+        await RefreshProducts();
+    }
+
+    private async Task DeleteProduct(vacunados product)
+    {
+        await service.DeleteProductAsync(product);
+        await RefreshProducts();
+    } }
