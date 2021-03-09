@@ -17,6 +17,7 @@
                     <th>Fecha dosis 1</th>
                     <th>Fecha dosis 2</th>
                     <th>Provincia</th>
+                    <th>Provincia</th>
                 </tr>
             </thead>
             <tbody>
@@ -33,6 +34,7 @@
     <td>@product.tipoVacuna</td>
     <td>@product.fecahDosis1</td>
     <td>@product.fecahDosis2</td>
+    <td>@product.provincia</td>
     <td><button class="btn btn-danger" @onclick="(() => DeleteProduct(product))">Delete</button></td>
 </tr>
 } }
@@ -150,6 +152,7 @@ else
     }
 
     vacunados UpdateProduct = new vacunados();
+
     private void SetProductForUpdate(vacunados product)
     {
         UpdateProduct = product;

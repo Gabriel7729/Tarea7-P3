@@ -98,7 +98,7 @@ using Data;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 130 "C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\Pages\Index.razor"
+#line 132 "C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\Pages\Index.razor"
         List<vacunados> Products = new List<vacunados>();
 
     protected override async Task OnInitializedAsync()
@@ -122,6 +122,7 @@ using Data;
     }
 
     vacunados UpdateProduct = new vacunados();
+
     private void SetProductForUpdate(vacunados product)
     {
         UpdateProduct = product;
