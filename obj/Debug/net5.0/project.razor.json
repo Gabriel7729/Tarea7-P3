@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\Lusan\\Downloads\\Tarea7-P3-Luis\\__tarea7.csproj",
+  "FilePath": "c:\\Users\\Lusan\\Documents\\MEGAsync Downloads\\Tarea7-P3\\__tarea7.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -11,6 +11,39 @@
   },
   "ProjectWorkspaceState": {
     "TagHelpers": [
+      {
+        "HashCode": -817148798,
+        "Kind": "Components.Component",
+        "Name": "__tarea7.Pages.AnularRegistro",
+        "AssemblyName": "__tarea7",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AnularRegistro"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "__tarea7.Pages.AnularRegistro"
+        }
+      },
+      {
+        "HashCode": 163433556,
+        "Kind": "Components.Component",
+        "Name": "__tarea7.Pages.AnularRegistro",
+        "AssemblyName": "__tarea7",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "__tarea7.Pages.AnularRegistro"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "__tarea7.Pages.AnularRegistro",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
       {
         "HashCode": -21657630,
         "Kind": "Components.Component",
@@ -15950,59 +15983,64 @@
   "RootNamespace": "__tarea7",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\Lusan\\Downloads\\Tarea7-P3-Luis\\Shared\\MainLayout.razor",
-      "TargetPath": "Shared\\MainLayout.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\Lusan\\Downloads\\Tarea7-P3-Luis\\_Imports.razor",
+      "FilePath": "c:\\Users\\Lusan\\Documents\\MEGAsync Downloads\\Tarea7-P3\\_Imports.razor",
       "TargetPath": "_Imports.razor",
       "FileKind": "componentImport"
     },
     {
-      "FilePath": "c:\\Users\\Lusan\\Downloads\\Tarea7-P3-Luis\\Pages\\ConsultaVacunados.razor",
-      "TargetPath": "Pages\\ConsultaVacunados.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\Lusan\\Downloads\\Tarea7-P3-Luis\\Shared\\NavMenu.razor",
-      "TargetPath": "Shared\\NavMenu.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\Lusan\\Downloads\\Tarea7-P3-Luis\\Pages\\Error.cshtml",
+      "FilePath": "c:\\Users\\Lusan\\Documents\\MEGAsync Downloads\\Tarea7-P3\\Pages\\Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Lusan\\Downloads\\Tarea7-P3-Luis\\Shared\\SurveyPrompt.razor",
-      "TargetPath": "Shared\\SurveyPrompt.razor",
+      "FilePath": "c:\\Users\\Lusan\\Documents\\MEGAsync Downloads\\Tarea7-P3\\Pages\\AnularRegistro.razor",
+      "TargetPath": "Pages\\AnularRegistro.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\Lusan\\Downloads\\Tarea7-P3-Luis\\Pages\\Counter.razor",
-      "TargetPath": "Pages\\Counter.razor",
+      "FilePath": "c:\\Users\\Lusan\\Documents\\MEGAsync Downloads\\Tarea7-P3\\Pages\\ConsultaVacunados.razor",
+      "TargetPath": "Pages\\ConsultaVacunados.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\Lusan\\Downloads\\Tarea7-P3-Luis\\Pages\\RegistrarVacuna.razor",
-      "TargetPath": "Pages\\RegistrarVacuna.razor",
+      "FilePath": "c:\\Users\\Lusan\\Documents\\MEGAsync Downloads\\Tarea7-P3\\Shared\\NavMenu.razor",
+      "TargetPath": "Shared\\NavMenu.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\Lusan\\Downloads\\Tarea7-P3-Luis\\Pages\\Index.razor",
-      "TargetPath": "Pages\\Index.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\Lusan\\Downloads\\Tarea7-P3-Luis\\App.razor",
+      "FilePath": "c:\\Users\\Lusan\\Documents\\MEGAsync Downloads\\Tarea7-P3\\App.razor",
       "TargetPath": "App.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\Lusan\\Downloads\\Tarea7-P3-Luis\\Pages\\_Host.cshtml",
+      "FilePath": "c:\\Users\\Lusan\\Documents\\MEGAsync Downloads\\Tarea7-P3\\Pages\\Counter.razor",
+      "TargetPath": "Pages\\Counter.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\Lusan\\Documents\\MEGAsync Downloads\\Tarea7-P3\\Shared\\MainLayout.razor",
+      "TargetPath": "Shared\\MainLayout.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\Lusan\\Documents\\MEGAsync Downloads\\Tarea7-P3\\Pages\\_Host.cshtml",
       "TargetPath": "Pages\\_Host.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Lusan\\Documents\\MEGAsync Downloads\\Tarea7-P3\\Pages\\Index.razor",
+      "TargetPath": "Pages\\Index.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\Lusan\\Documents\\MEGAsync Downloads\\Tarea7-P3\\Shared\\SurveyPrompt.razor",
+      "TargetPath": "Shared\\SurveyPrompt.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\Lusan\\Documents\\MEGAsync Downloads\\Tarea7-P3\\Pages\\RegistrarVacuna.razor",
+      "TargetPath": "Pages\\RegistrarVacuna.razor",
+      "FileKind": "component"
     }
   ],
   "SerializationFormat": "0.2"
