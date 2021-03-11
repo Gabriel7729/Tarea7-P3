@@ -1,0 +1,176 @@
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\__tarea7.csprojAssemblyReference.cache
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\__tarea7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\__tarea7.AssemblyInfoInputs.cache
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\__tarea7.AssemblyInfo.cs
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\__tarea7.csproj.CoreCompileInputs.cache
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\__tarea7.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\__tarea7.RazorComponent.input.cache
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\RazorDeclaration\App.razor.g.cs
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\RazorDeclaration\Pages\Counter.razor.g.cs
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\RazorDeclaration\Pages\FetchData.razor.g.cs
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\RazorDeclaration\Pages\Index.razor.g.cs
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\RazorDeclaration\Pages\RegistrarVacuna.razor.g.cs
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\RazorDeclaration\_Imports.razor.g.cs
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\RazorDeclaration\Shared\MainLayout.razor.g.cs
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\RazorDeclaration\Shared\NavMenu.razor.g.cs
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\__tarea7.RazorComponent.output.cache
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\bin\Debug\net5.0\appsettings.json
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\bin\Debug\net5.0\__tarea7.StaticWebAssets.xml
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\bin\Debug\net5.0\__tarea7.exe
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\bin\Debug\net5.0\__tarea7.deps.json
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\bin\Debug\net5.0\__tarea7.runtimeconfig.json
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\bin\Debug\net5.0\__tarea7.runtimeconfig.dev.json
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\bin\Debug\net5.0\__tarea7.dll
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\bin\Debug\net5.0\ref\__tarea7.dll
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\bin\Debug\net5.0\__tarea7.pdb
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\bin\Debug\net5.0\__tarea7.Views.dll
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\bin\Debug\net5.0\__tarea7.Views.pdb
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\bin\Debug\net5.0\Humanizer.dll
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\bin\Debug\net5.0\Microsoft.Data.Sqlite.dll
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\bin\Debug\net5.0\SQLitePCLRaw.batteries_v2.dll
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\bin\Debug\net5.0\SQLitePCLRaw.nativelibrary.dll
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\bin\Debug\net5.0\SQLitePCLRaw.core.dll
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\bin\Debug\net5.0\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\bin\Debug\net5.0\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\bin\Debug\net5.0\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\bin\Debug\net5.0\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\bin\Debug\net5.0\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\bin\Debug\net5.0\runtimes\linux-mips64\native\libe_sqlite3.so
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\bin\Debug\net5.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\bin\Debug\net5.0\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\bin\Debug\net5.0\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\bin\Debug\net5.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\bin\Debug\net5.0\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\bin\Debug\net5.0\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\bin\Debug\net5.0\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\bin\Debug\net5.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\RazorDeclaration\__tarea7.dll
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\__tarea7.TagHelpers.input.cache
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\__tarea7.TagHelpers.output.cache
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\__tarea7.RazorCoreGenerate.cache
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\Razor\App.razor.g.cs
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\Razor\Pages\Counter.razor.g.cs
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\Razor\Pages\FetchData.razor.g.cs
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\Razor\Pages\Index.razor.g.cs
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\Razor\Pages\RegistrarVacuna.razor.g.cs
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\Razor\Shared\SurveyPrompt.razor.g.cs
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\Razor\_Imports.razor.g.cs
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\Razor\Shared\MainLayout.razor.g.cs
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\Razor\Shared\NavMenu.razor.g.cs
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\Razor\Pages\_Host.cshtml.g.cs
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\__tarea7.RazorAssemblyInfo.cache
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\__tarea7.RazorAssemblyInfo.cs
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\staticwebassets\__tarea7.StaticWebAssets.Manifest.cache
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\staticwebassets\__tarea7.StaticWebAssets.xml
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\scopedcss\bundle\__tarea7.styles.css
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\scopedcss\projectbundle\__tarea7.bundle.scp.css
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\__tarea7.RazorTargetAssemblyInfo.cache
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\__tarea7.RazorTargetAssemblyInfo.cs
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\__tarea7.Views.pdb
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\__tarea7.csproj.CopyComplete
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\__tarea7.dll
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\ref\__tarea7.dll
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\__tarea7.pdb
+C:\Users\LUIS ANTONIO DE AZA\source\repos\__tarea7\__tarea7\obj\Debug\net5.0\__tarea7.genruntimeconfig.cache
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\bin\Debug\net5.0\appsettings.json
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\bin\Debug\net5.0\__tarea7.StaticWebAssets.xml
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\bin\Debug\net5.0\__tarea7.exe
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\bin\Debug\net5.0\__tarea7.deps.json
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\bin\Debug\net5.0\__tarea7.runtimeconfig.json
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\bin\Debug\net5.0\__tarea7.runtimeconfig.dev.json
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\bin\Debug\net5.0\__tarea7.dll
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\bin\Debug\net5.0\ref\__tarea7.dll
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\bin\Debug\net5.0\__tarea7.pdb
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\bin\Debug\net5.0\__tarea7.Views.dll
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\bin\Debug\net5.0\__tarea7.Views.pdb
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\bin\Debug\net5.0\Humanizer.dll
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\bin\Debug\net5.0\Microsoft.Data.Sqlite.dll
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\bin\Debug\net5.0\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\bin\Debug\net5.0\SQLitePCLRaw.nativelibrary.dll
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\bin\Debug\net5.0\SQLitePCLRaw.core.dll
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\bin\Debug\net5.0\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\bin\Debug\net5.0\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\bin\Debug\net5.0\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\bin\Debug\net5.0\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\bin\Debug\net5.0\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\bin\Debug\net5.0\runtimes\linux-mips64\native\libe_sqlite3.so
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\bin\Debug\net5.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\bin\Debug\net5.0\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\bin\Debug\net5.0\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\bin\Debug\net5.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\bin\Debug\net5.0\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\bin\Debug\net5.0\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\bin\Debug\net5.0\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\bin\Debug\net5.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\__tarea7.csprojAssemblyReference.cache
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\__tarea7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\__tarea7.AssemblyInfoInputs.cache
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\__tarea7.AssemblyInfo.cs
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\__tarea7.csproj.CoreCompileInputs.cache
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\__tarea7.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\__tarea7.RazorComponent.input.cache
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\RazorDeclaration\App.razor.g.cs
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\RazorDeclaration\Pages\Counter.razor.g.cs
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\RazorDeclaration\Pages\Index.razor.g.cs
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\RazorDeclaration\Pages\RegistrarVacuna.razor.g.cs
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\RazorDeclaration\_Imports.razor.g.cs
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\RazorDeclaration\Shared\MainLayout.razor.g.cs
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\RazorDeclaration\Shared\NavMenu.razor.g.cs
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\__tarea7.RazorComponent.output.cache
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\RazorDeclaration\__tarea7.dll
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\__tarea7.TagHelpers.input.cache
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\__tarea7.TagHelpers.output.cache
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\__tarea7.RazorCoreGenerate.cache
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\Razor\App.razor.g.cs
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\Razor\Pages\Counter.razor.g.cs
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\Razor\Pages\Index.razor.g.cs
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\Razor\Pages\RegistrarVacuna.razor.g.cs
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\Razor\Shared\SurveyPrompt.razor.g.cs
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\Razor\_Imports.razor.g.cs
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\Razor\Shared\MainLayout.razor.g.cs
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\Razor\Shared\NavMenu.razor.g.cs
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\Razor\Pages\_Host.cshtml.g.cs
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\__tarea7.RazorAssemblyInfo.cache
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\__tarea7.RazorAssemblyInfo.cs
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\staticwebassets\__tarea7.StaticWebAssets.Manifest.cache
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\staticwebassets\__tarea7.StaticWebAssets.xml
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\scopedcss\bundle\__tarea7.styles.css
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\scopedcss\projectbundle\__tarea7.bundle.scp.css
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\__tarea7.RazorTargetAssemblyInfo.cache
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\__tarea7.RazorTargetAssemblyInfo.cs
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\__tarea7.Views.pdb
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\__tarea7.csproj.CopyComplete
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\__tarea7.dll
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\ref\__tarea7.dll
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\__tarea7.pdb
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\__tarea7.genruntimeconfig.cache
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\RazorDeclaration\Pages\ConsultaVacunados.razor.g.cs
+C:\Users\Lusan\Downloads\Tarea7-P3-Luis\obj\Debug\net5.0\Razor\Pages\ConsultaVacunados.razor.g.cs
