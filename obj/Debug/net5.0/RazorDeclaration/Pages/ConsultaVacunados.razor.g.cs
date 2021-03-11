@@ -98,7 +98,7 @@ using Data;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 371 "C:\Users\Lusan\Downloads\Tarea7-P3-Luis\Pages\ConsultaVacunados.razor"
+#line 386 "C:\Users\Lusan\Downloads\Tarea7-P3-Luis\Pages\ConsultaVacunados.razor"
         
 
     String FiltroParaMostrar = "-- Sin seleccionar --";
@@ -129,6 +129,25 @@ using Data;
     int CantidadLibra = 0;
     int CantidadEscorpio = 0;
     int CantidadSagitario = 0;
+
+    public double GraficoVacunaTipoA(double VacunaTipoA)
+    {
+        VacunaTipoA = CanditadVacunaTipoA;
+        VacunaTipoA = (VacunaTipoA * 10);
+        return VacunaTipoA;
+    }
+    public double GraficoVacunaTipoB(double VacunaTipoB)
+    {
+        VacunaTipoB = CanditadVacunaTipoB;
+        VacunaTipoB = (VacunaTipoB * 10);
+        return VacunaTipoB;
+    }
+    public double GraficoVacunaTipoC(double VacunaTipoC)
+    {
+        VacunaTipoC = CanditadVacunaTipoC;
+        VacunaTipoC = (VacunaTipoC * 10);
+        return VacunaTipoC;
+    }
 
     public void InicializarCero()
     {

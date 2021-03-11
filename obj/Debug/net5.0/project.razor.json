@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\LUIS ANTONIO DE AZA\\source\\repos\\__tarea7\\__tarea7\\__tarea7.csproj",
+  "FilePath": "c:\\Users\\Lusan\\Downloads\\Tarea7-P3-Luis\\__tarea7.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -11,6 +11,39 @@
   },
   "ProjectWorkspaceState": {
     "TagHelpers": [
+      {
+        "HashCode": -21657630,
+        "Kind": "Components.Component",
+        "Name": "__tarea7.Pages.ConsultaVacunados",
+        "AssemblyName": "__tarea7",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ConsultaVacunados"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "__tarea7.Pages.ConsultaVacunados"
+        }
+      },
+      {
+        "HashCode": -1822588219,
+        "Kind": "Components.Component",
+        "Name": "__tarea7.Pages.ConsultaVacunados",
+        "AssemblyName": "__tarea7",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "__tarea7.Pages.ConsultaVacunados"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "__tarea7.Pages.ConsultaVacunados",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
       {
         "HashCode": -1188547571,
         "Kind": "Components.Component",
@@ -45,39 +78,6 @@
         }
       },
       {
-        "HashCode": 1349999268,
-        "Kind": "Components.Component",
-        "Name": "__tarea7.Pages.FetchData",
-        "AssemblyName": "__tarea7",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "__tarea7.Pages.FetchData"
-        }
-      },
-      {
-        "HashCode": -1761464398,
-        "Kind": "Components.Component",
-        "Name": "__tarea7.Pages.FetchData",
-        "AssemblyName": "__tarea7",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "__tarea7.Pages.FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "__tarea7.Pages.FetchData",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -368573535,
         "Kind": "Components.Component",
         "Name": "__tarea7.Pages.Index",
@@ -107,6 +107,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "__tarea7.Pages.Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1529095051,
+        "Kind": "Components.Component",
+        "Name": "__tarea7.Pages.RegistrarVacuna",
+        "AssemblyName": "__tarea7",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "RegistrarVacuna"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "__tarea7.Pages.RegistrarVacuna"
+        }
+      },
+      {
+        "HashCode": 1547602741,
+        "Kind": "Components.Component",
+        "Name": "__tarea7.Pages.RegistrarVacuna",
+        "AssemblyName": "__tarea7",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "__tarea7.Pages.RegistrarVacuna"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "__tarea7.Pages.RegistrarVacuna",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -15917,54 +15950,59 @@
   "RootNamespace": "__tarea7",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\LUIS ANTONIO DE AZA\\source\\repos\\__tarea7\\__tarea7\\Pages\\Error.cshtml",
-      "TargetPath": "Pages\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\LUIS ANTONIO DE AZA\\source\\repos\\__tarea7\\__tarea7\\Shared\\MainLayout.razor",
+      "FilePath": "c:\\Users\\Lusan\\Downloads\\Tarea7-P3-Luis\\Shared\\MainLayout.razor",
       "TargetPath": "Shared\\MainLayout.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\LUIS ANTONIO DE AZA\\source\\repos\\__tarea7\\__tarea7\\Pages\\Index.razor",
-      "TargetPath": "Pages\\Index.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\LUIS ANTONIO DE AZA\\source\\repos\\__tarea7\\__tarea7\\Pages\\_Host.cshtml",
-      "TargetPath": "Pages\\_Host.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\LUIS ANTONIO DE AZA\\source\\repos\\__tarea7\\__tarea7\\Shared\\SurveyPrompt.razor",
-      "TargetPath": "Shared\\SurveyPrompt.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\LUIS ANTONIO DE AZA\\source\\repos\\__tarea7\\__tarea7\\Pages\\FetchData.razor",
-      "TargetPath": "Pages\\FetchData.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\LUIS ANTONIO DE AZA\\source\\repos\\__tarea7\\__tarea7\\App.razor",
-      "TargetPath": "App.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\LUIS ANTONIO DE AZA\\source\\repos\\__tarea7\\__tarea7\\Shared\\NavMenu.razor",
-      "TargetPath": "Shared\\NavMenu.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\LUIS ANTONIO DE AZA\\source\\repos\\__tarea7\\__tarea7\\_Imports.razor",
+      "FilePath": "c:\\Users\\Lusan\\Downloads\\Tarea7-P3-Luis\\_Imports.razor",
       "TargetPath": "_Imports.razor",
       "FileKind": "componentImport"
     },
     {
-      "FilePath": "c:\\Users\\LUIS ANTONIO DE AZA\\source\\repos\\__tarea7\\__tarea7\\Pages\\Counter.razor",
+      "FilePath": "c:\\Users\\Lusan\\Downloads\\Tarea7-P3-Luis\\Pages\\ConsultaVacunados.razor",
+      "TargetPath": "Pages\\ConsultaVacunados.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\Lusan\\Downloads\\Tarea7-P3-Luis\\Shared\\NavMenu.razor",
+      "TargetPath": "Shared\\NavMenu.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\Lusan\\Downloads\\Tarea7-P3-Luis\\Pages\\Error.cshtml",
+      "TargetPath": "Pages\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Lusan\\Downloads\\Tarea7-P3-Luis\\Shared\\SurveyPrompt.razor",
+      "TargetPath": "Shared\\SurveyPrompt.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\Lusan\\Downloads\\Tarea7-P3-Luis\\Pages\\Counter.razor",
       "TargetPath": "Pages\\Counter.razor",
       "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\Lusan\\Downloads\\Tarea7-P3-Luis\\Pages\\RegistrarVacuna.razor",
+      "TargetPath": "Pages\\RegistrarVacuna.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\Lusan\\Downloads\\Tarea7-P3-Luis\\Pages\\Index.razor",
+      "TargetPath": "Pages\\Index.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\Lusan\\Downloads\\Tarea7-P3-Luis\\App.razor",
+      "TargetPath": "App.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\Lusan\\Downloads\\Tarea7-P3-Luis\\Pages\\_Host.cshtml",
+      "TargetPath": "Pages\\_Host.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"

@@ -134,11 +134,26 @@ else
                                                         else
                                                         {
                                         <tr><td colspan="6"><strong>No hay Registros disponibles...</strong></td></tr>}
-
+            
         </tbody>
     </table>
-</div>}
+    @if (Vacunados.Any())
+    {
+            <div class="chart-wrap">
+                <!-- quitar el estilo "horizontal" para visualizar verticalmente -->
+                <div class="title text-center">Grafico de la Cantidad de Vacunas por tipo</div>
+                <div class="grid">
+                    <div class="bar" style="--bar-value:@GraficoVacunaTipoA(CanditadVacunaTipoA)%;" data-name="Vacuna tipo A" title="Your Blog 85%"></div>
+                    <div class="bar" style="--bar-value:@GraficoVacunaTipoB(CanditadVacunaTipoB)%;" data-name="Vacuna tipo B" title="Medium 23%"></div>
+                    <div class="bar" style="--bar-value:@GraficoVacunaTipoC(CanditadVacunaTipoC)%;" data-name="Vacuna tipo C" title="Tumblr 7%"></div>
+                </div>
+            </div>
+    }
 
+    
+</div>
+    }
+    
 
     @if (FiltroParaMostrar == "Listado de vacunados por signo zodiacal")
     {
@@ -398,6 +413,25 @@ else
     int CantidadLibra = 0;
     int CantidadEscorpio = 0;
     int CantidadSagitario = 0;
+
+    public double GraficoVacunaTipoA(double VacunaTipoA)
+    {
+        VacunaTipoA = CanditadVacunaTipoA;
+        VacunaTipoA = (VacunaTipoA * 10);
+        return VacunaTipoA;
+    }
+    public double GraficoVacunaTipoB(double VacunaTipoB)
+    {
+        VacunaTipoB = CanditadVacunaTipoB;
+        VacunaTipoB = (VacunaTipoB * 10);
+        return VacunaTipoB;
+    }
+    public double GraficoVacunaTipoC(double VacunaTipoC)
+    {
+        VacunaTipoC = CanditadVacunaTipoC;
+        VacunaTipoC = (VacunaTipoC * 10);
+        return VacunaTipoC;
+    }
 
     public void InicializarCero()
     {
