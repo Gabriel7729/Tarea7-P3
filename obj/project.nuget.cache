@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5/25HHmq3FUn/dwjt78e7D8VFe8lLlg8Ea2mlyLgVjxbxuuN82weg9CQEKlK7WhwRolwRoExQhn4z9KG3cGdmQ==",
+  "dgSpecHash": "DGgeCdUMdT7IBHfVyk268ETk5poPoWCxRTkEcWG3R73zeDTYVx5mE2+m6s8eOEXGYOpTt0a1iSifGaGSlBOK4A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lusan\\Downloads\\Tarea7-P3-Luis\\__tarea7.csproj",
+  "projectFilePath": "C:\\Users\\Lusan\\Desktop\\Tarea7-P3\\__tarea7.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lusan\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Lusan\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
