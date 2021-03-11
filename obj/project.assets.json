@@ -1109,19 +1109,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\LUIS ANTONIO DE AZA\\.nuget\\packages\\": {}
+    "C:\\Users\\Lusan\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LUIS ANTONIO DE AZA\\source\\repos\\__tarea7\\__tarea7\\__tarea7.csproj",
+      "projectUniqueName": "C:\\Users\\Lusan\\Downloads\\Tarea7-P3-Luis\\__tarea7.csproj",
       "projectName": "__tarea7",
-      "projectPath": "C:\\Users\\LUIS ANTONIO DE AZA\\source\\repos\\__tarea7\\__tarea7\\__tarea7.csproj",
-      "packagesPath": "C:\\Users\\LUIS ANTONIO DE AZA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LUIS ANTONIO DE AZA\\source\\repos\\__tarea7\\__tarea7\\obj\\",
+      "projectPath": "C:\\Users\\Lusan\\Downloads\\Tarea7-P3-Luis\\__tarea7.csproj",
+      "packagesPath": "C:\\Users\\Lusan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Lusan\\Downloads\\Tarea7-P3-Luis\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\LUIS ANTONIO DE AZA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Lusan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

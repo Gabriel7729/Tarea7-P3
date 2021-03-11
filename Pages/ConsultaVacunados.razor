@@ -1,0 +1,499 @@
+﻿@page "/ConsultaVacunados"
+@*Injects para el funcionamiento correcto del Dtaatable*@
+@inject IJSRuntime JSRuntime
+@implements IDisposable
+
+@using Data
+@inject vacunadosServices service
+
+<header>
+    <div class="alert alert-info" role="alert">
+        <h1 class="text-center">Consulta de Vacunados</h1>
+    </div>
+</header>
+
+<br />
+
+<section class="container-fluid">
+
+    <div class="sidebar-box text-center">
+        <label for="FiltroMostrar"><strong>Eliga que apartado de filtros desea mostrar:</strong></label>
+        <center>
+            <select class="styled-select" id="FiltroMostrar" name="name" @onchange="FiltroMostrar" style="width:340px">
+                <option> -- Sin seleccionar -- </option>
+                <option>Consulta de Vacunados</option>
+                <option>Listado de vacunados por provincia</option>
+                <option>Listado de vacunados por marca de vacuna</option>
+                <option>Listado de vacunados por signo zodiacal</option>
+            </select>
+        </center>
+    </div>
+
+    <br />
+
+    @if (FiltroParaMostrar == "Consulta de Vacunados")
+    {
+<div class="alert alert-info" role="alert">
+    <div class="alert alert-light" role="alert">
+        <h3 class="text-center"><strong>Filtrar los vacunados por Nombre y Apellidos</strong></h3>
+    </div>
+    <br />
+    <table class="table table-bordered table-hover" id="example">
+        <thead class="thead-dark">
+            <tr>
+                <th>Id</th>
+                <th>Nombres</th>
+                <th>Apellido</th>
+                <th>Telefono</th>
+                <th>Fecha de nacimiento</th>
+                <th>Tipo de vacuna</th>
+                <th>Fecha dosis 1</th>
+                <th>Fecha dosis 2</th>
+                <th>Provincia</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Vacunados.Any())
+            {
+@foreach (var vacun in Vacunados)
+{
+<tr @onclick="(() => SetProductForUpdate(vacun))">
+    <td>@vacun.Id</td>
+    <td>@vacun.nombre</td>
+    <td>@vacun.apellido</td>
+    <td>@vacun.telefono</td>
+    <td>@vacun.fechaNacimiento</td>
+    <td>@vacun.tipoVacuna</td>
+    <td>@vacun.fecahDosis1</td>
+    <td>@vacun.fecahDosis2</td>
+    <td>@vacun.provincia</td>
+</tr>} }
+else
+{
+<tr><td colspan="6"><strong>No hay Registros disponibles...</strong></td></tr>
+}
+        </tbody>
+    </table>
+</div>}
+
+    @if (FiltroParaMostrar == "Listado de vacunados por marca de vacuna")
+    {
+<div class="alert alert-info" role="alert">
+    <div class="alert alert-light" role="alert">
+        <h3 class="text-center"><strong>Listado de vacunados por Tipo de Vacuna</strong></h3>
+    </div>
+    <br />
+    <table class="table table-bordered table-hover" id="example">
+        <thead class="thead-dark">
+            <tr>
+                <th>Tipo de vacuna</th>
+                <th>Cantidad de Vacunados</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Vacunados.Any())
+            {
+                InicializarCero();
+@foreach (var vacun in Vacunados)
+{
+    if (vacun.tipoVacuna == "Vacuna tipo A")
+    {
+        CanditadVacunaTipoA += 1;
+        TipoVacuna_A = vacun.tipoVacuna;
+    }
+    else
+    {
+        if (vacun.tipoVacuna == "Vacuna tipo B")
+        {
+            CanditadVacunaTipoB += 1;
+            TipoVacuna_B = vacun.tipoVacuna;
+        }
+        else
+        {
+            if (vacun.tipoVacuna == "Vacuna tipo C")
+            {
+                CanditadVacunaTipoC += 1;
+                TipoVacuna_C = vacun.tipoVacuna;
+            }
+        }
+    }
+}
+                    <tr>
+                        <td>@TipoVacuna_A</td>
+                        <td>@CanditadVacunaTipoA</td>
+                    </tr>
+                                        <tr>
+                                            <td>@TipoVacuna_B</td>
+                                            <td>@CanditadVacunaTipoB</td>
+                                        </tr>
+                                                            <tr>
+                                                                <td>@TipoVacuna_C</td>
+                                                                <td>@CanditadVacunaTipoC</td>
+                                                            </tr>
+ }
+                                                        else
+                                                        {
+                                        <tr><td colspan="6"><strong>No hay Registros disponibles...</strong></td></tr>}
+            
+        </tbody>
+    </table>
+    @if (Vacunados.Any())
+    {
+            <div class="chart-wrap">
+                <!-- quitar el estilo "horizontal" para visualizar verticalmente -->
+                <div class="title text-center">Grafico de la Cantidad de Vacunas por tipo</div>
+                <div class="grid">
+                    <div class="bar" style="--bar-value:@GraficoVacunaTipoA(CanditadVacunaTipoA)%;" data-name="Vacuna tipo A" title="Your Blog 85%"></div>
+                    <div class="bar" style="--bar-value:@GraficoVacunaTipoB(CanditadVacunaTipoB)%;" data-name="Vacuna tipo B" title="Medium 23%"></div>
+                    <div class="bar" style="--bar-value:@GraficoVacunaTipoC(CanditadVacunaTipoC)%;" data-name="Vacuna tipo C" title="Tumblr 7%"></div>
+                </div>
+            </div>
+    }
+
+    
+</div>
+    }
+    
+
+    @if (FiltroParaMostrar == "Listado de vacunados por signo zodiacal")
+    {
+<div class="alert alert-info" role="alert">
+    <div class="alert alert-light" role="alert">
+        <h3 class="text-center"><strong>Listado de vacunados por signo zodiacal</strong></h3>
+    </div>
+    <br />
+    <table class="table table-bordered table-hover" id="example">
+        <thead class="thead-dark">
+            <tr>
+                <th>Signo Zodiacal</th>
+                <th>Cantidad</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Vacunados.Any())
+            {
+                InicializarCero();
+@foreach (var vacun in Vacunados)
+{
+    FechaDeNacimiento = Convert.ToDateTime(vacun.fechaNacimiento);
+    if (ActualizarVacunados.SignoZodiacal(FechaDeNacimiento) == "Capricornio")
+    {
+        
+        CantidadCapricornio += 1;
+    }
+    if (ActualizarVacunados.SignoZodiacal(FechaDeNacimiento) == "Acuario")
+    {
+        
+        CantidadAcuario += 1;
+    }
+    if (ActualizarVacunados.SignoZodiacal(FechaDeNacimiento) == "Piscis")
+    {
+        
+        CantidadPiscis += 1;
+    }
+    if (ActualizarVacunados.SignoZodiacal(FechaDeNacimiento) == "Aries")
+    {
+        
+        CantidadAries += 1;
+    }
+    if (ActualizarVacunados.SignoZodiacal(FechaDeNacimiento) == "Tauro")
+    {
+        
+        CantidadTauro += 1;
+    }
+    if (ActualizarVacunados.SignoZodiacal(FechaDeNacimiento) == "Géminis")
+    {
+        
+        CantidadGéminis += 1;
+    }
+    if (ActualizarVacunados.SignoZodiacal(FechaDeNacimiento) == "Cancer")
+    {
+        
+        CantidadCancer += 1;
+    }
+    if (ActualizarVacunados.SignoZodiacal(FechaDeNacimiento) == "Leo")
+    {
+        
+        CantidadLeo += 1;
+    }
+    if (ActualizarVacunados.SignoZodiacal(FechaDeNacimiento) == "Virgo")
+    {
+        
+        CantidadVirgo += 1;
+    }
+    if (ActualizarVacunados.SignoZodiacal(FechaDeNacimiento) == "Libra")
+    {
+        
+        CantidadLibra += 1;
+    }
+    if (ActualizarVacunados.SignoZodiacal(FechaDeNacimiento) == "Escorpio")
+    {
+        
+        CantidadEscorpio += 1;
+    }
+    if (ActualizarVacunados.SignoZodiacal(FechaDeNacimiento) == "Sagitario")
+    {
+        
+        CantidadSagitario += 1;
+    }
+}
+                    <tr>
+                        <td>Capricornio</td>
+                        <td>@CantidadCapricornio</td>
+                    </tr>
+                                        <tr>
+                                            <td>Acuario</td>
+                                            <td>@CantidadAcuario</td>
+                                        </tr>
+                                                            <tr>
+                                                                <td>Piscis</td>
+                                                                <td>@CantidadPiscis</td>
+                                                            </tr>
+                                                                                <tr>
+                                                                                    <td>Aries</td>
+                                                                                    <td>@CantidadAries</td>
+                                                                                </tr>
+                                                                                                    <tr>
+                                                                                                        <td>Tauro</td>
+                                                                                                        <td>@CantidadTauro</td>
+                                                                                                    </tr>
+                                                                                                                        <tr>
+                                                                                                                            <td>Géminis</td>
+                                                                                                                            <td>@CantidadGéminis</td>
+                                                                                                                        </tr>
+                                                                                                                                            <tr>
+                                                                                                                                                <td>Cancer</td>
+                                                                                                                                                <td>@CantidadCancer</td>
+                                                                                                                                            </tr>
+                                                                                                                                                                <tr>
+                                                                                                                                                                    <td>Leo</td>
+                                                                                                                                                                    <td>@CantidadLeo</td>
+                                                                                                                                                                </tr>
+                                                                                                                                                                                    <tr>
+                                                                                                                                                                                        <td>Virgo</td>
+                                                                                                                                                                                        <td>@CantidadVirgo</td>
+                                                                                                                                                                                    </tr>
+                                                                                                                                                                                                        <tr>
+                                                                                                                                                                                                            <td>Libra</td>
+                                                                                                                                                                                                            <td>@CantidadLibra</td>
+                                                                                                                                                                                                        </tr>
+                                                                                                                                                                                                                            <tr>
+                                                                                                                                                                                                                                <td>Escorpio</td>
+                                                                                                                                                                                                                                <td>@CantidadEscorpio</td>
+                                                                                                                                                                                                                            </tr>
+                                                                                                                                                                                                                                                <tr>
+                                                                                                                                                                                                                                                    <td>Sagitario</td>
+                                                                                                                                                                                                                                                    <td>@CantidadSagitario</td>
+                                                                                                                                                                                                                                                </tr> }
+                                                                                                                                                                                                                                                                else
+                                                                                                                                                                                                                                                                {
+                                                                                                                                                                                                                                                <tr><td colspan="6"><strong>No hay Registros disponibles...</strong></td></tr>}
+        </tbody>
+    </table>
+</div>}
+
+    @if (FiltroParaMostrar == "Listado de vacunados por provincia")
+    {
+<div class="alert alert-info" role="alert">
+    <div class="alert alert-light" role="alert">
+        <h3 class="text-center"><strong>Filtrar los vacunados por Provincia</strong></h3>
+    </div>
+    <br />
+
+    <div class="form-group">
+        <label for="exampleFormControlSelect1"><strong>Provincia: </strong></label>
+        <select class="form-control" id="exampleFormControlSelect1" name="nam" @onchange="provincias" style="width:200px">
+            <option> -- Sin seleccionar -- </option>
+            <option>Azua</option>
+            <option>Bahoruco</option>
+            <option>Barahona</option>
+            <option>Dajabón</option>
+            <option>Distrito Nacional</option>
+            <option>Duarte</option>
+            <option>Elías Piña</option>
+            <option>El Seibo</option>
+            <option>Espaillat</option>
+            <option>Hato Mayor</option>
+            <option>Hermanas Mirabal</option>
+            <option>Independencia</option>
+            <option>La Altagracia</option>
+            <option>La Romana</option>
+            <option>La Vega</option>
+            <option>María Trinidad Sánchez</option>
+            <option>Monseñor Nouel</option>
+            <option>Monte Cristi</option>
+            <option>Monte Plata</option>
+            <option>Pedernales</option>
+            <option>Peravia</option>
+            <option>Puerto Plata</option>
+            <option>Samaná</option>
+            <option>San José de Ocoa</option>
+            <option>San Juan</option>
+            <option>San Pedro de Macorís</option>
+            <option>Sánchez Ramírez</option>
+            <option>Santiago</option>
+            <option>Santiago Rodríguez</option>
+            <option>Santo Domingo</option>
+            <option>Valverde</option>
+
+        </select>
+    </div>
+
+    <table class="table table-bordered table-hover" id="example">
+        <thead class="thead-dark">
+            <tr>
+                <th>Id</th>
+                <th>Nombres</th>
+                <th>Apellido</th>
+                <th>Telefono</th>
+                <th>Fecha de nacimiento</th>
+                <th>Tipo de vacuna</th>
+                <th>Fecha dosis 1</th>
+                <th>Fecha dosis 2</th>
+                <th>Provincia</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Vacunados.Any())
+            {
+        @foreach (var vacun in Vacunados)
+        {
+            if (provincia == vacun.provincia)
+            {
+                <tr>
+                    <td>@vacun.Id</td>
+                    <td>@vacun.nombre</td>
+                    <td>@vacun.apellido</td>
+                    <td>@vacun.telefono</td>
+                    <td>@vacun.fechaNacimiento</td>
+                    <td>@vacun.tipoVacuna</td>
+                    <td>@vacun.fecahDosis1</td>
+                    <td>@vacun.fecahDosis2</td>
+                    <td>@vacun.provincia</td>
+                </tr>
+            }
+
+        } }
+    else
+    {
+        <tr><td colspan="6"><strong>No hay Registros disponibles...</strong></td></tr>
+}
+        </tbody>
+    </table>
+</div>}
+</section>
+
+@code { 
+
+    String FiltroParaMostrar = "-- Sin seleccionar --";
+    String provincia = "-- Sin seleccionar --";
+    List<vacunados> Vacunados = new List<vacunados>();
+    vacunados ActualizarVacunados = new vacunados();
+
+    DateTime FechaDeNacimiento;
+
+    string TipoVacuna_A;
+    int CanditadVacunaTipoA = 0;
+
+    string TipoVacuna_B;
+    int CanditadVacunaTipoB = 0;
+
+    string TipoVacuna_C;
+    int CanditadVacunaTipoC = 0;
+
+    int CantidadCapricornio = 0;
+    int CantidadAcuario = 0;
+    int CantidadPiscis = 0;
+    int CantidadAries = 0;
+    int CantidadTauro = 0;
+    int CantidadGéminis = 0;
+    int CantidadCancer = 0;
+    int CantidadLeo = 0;
+    int CantidadVirgo = 0;
+    int CantidadLibra = 0;
+    int CantidadEscorpio = 0;
+    int CantidadSagitario = 0;
+
+    public double GraficoVacunaTipoA(double VacunaTipoA)
+    {
+        VacunaTipoA = CanditadVacunaTipoA;
+        VacunaTipoA = (VacunaTipoA * 10);
+        return VacunaTipoA;
+    }
+    public double GraficoVacunaTipoB(double VacunaTipoB)
+    {
+        VacunaTipoB = CanditadVacunaTipoB;
+        VacunaTipoB = (VacunaTipoB * 10);
+        return VacunaTipoB;
+    }
+    public double GraficoVacunaTipoC(double VacunaTipoC)
+    {
+        VacunaTipoC = CanditadVacunaTipoC;
+        VacunaTipoC = (VacunaTipoC * 10);
+        return VacunaTipoC;
+    }
+
+    public void InicializarCero()
+    {
+        CantidadCapricornio = 0;
+        CantidadAcuario = 0;
+        CantidadPiscis = 0;
+        CantidadAries = 0;
+        CantidadTauro = 0;
+        CantidadGéminis = 0;
+        CantidadCancer = 0;
+        CantidadLeo = 0;
+        CantidadVirgo = 0;
+        CantidadLibra = 0;
+        CantidadEscorpio = 0;
+        CantidadSagitario = 0;
+
+        CanditadVacunaTipoA = 0;
+        CanditadVacunaTipoB = 0;
+        CanditadVacunaTipoC = 0;
+    }
+
+    public void provincias(ChangeEventArgs e)
+    {
+        provincia = e.Value.ToString();
+    }
+
+    //Codigo del select, para poder mostrar datos y filtrarlos por el select
+    public void FiltroMostrar(ChangeEventArgs e)
+    {
+        FiltroParaMostrar = e.Value.ToString();
+    }
+
+    //Codigo para poder visualizar los datos de la Base de Datos
+    protected override async Task OnInitializedAsync()
+    {
+        await RefreshVacunados();
+    }
+
+    private void SetProductForUpdate(vacunados vacun)
+    {
+        ActualizarVacunados = vacun;
+    }
+
+    private async Task RefreshVacunados()
+    {
+        Vacunados = await service.GetProductAsync();
+    }
+
+    private async Task DeleteVacunados(vacunados vacun)
+    {
+        await service.DeleteProductAsync(vacun);
+        await RefreshVacunados();
+    }
+
+    //Codigo para poder implementar el Datatable
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await JSRuntime.InvokeAsync<object>("TestDataTablesAdd", "#example");
+    }
+
+    void IDisposable.Dispose()
+    {
+        JSRuntime.InvokeAsync<object>("TestDataTablesRemove", "#example");
+    } }
+
