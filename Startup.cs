@@ -37,7 +37,7 @@ namespace __tarea7
             services.AddSingleton<WeatherForecastService>();
             services.AddDbContext<vacunadosDbContext>(options =>
             {
-                options.UseSqlite("Data Source = vacunadosV2.db");
+                options.UseSqlite("Data Source = DBV3.db");
             });
             services.AddScoped<vacunadosServices>();
         }

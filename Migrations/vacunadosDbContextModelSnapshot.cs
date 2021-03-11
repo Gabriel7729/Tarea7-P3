@@ -15,11 +15,10 @@ namespace __tarea7.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "5.0.3");
 
-            modelBuilder.Entity("_Tarea7.Data.vacunados", b =>
+            modelBuilder.Entity("__tarea7.Data.vacunados", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("Id")
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("apellido")
                         .HasColumnType("TEXT");
@@ -52,7 +51,7 @@ namespace __tarea7.Migrations
                     b.HasData(
                         new
                         {
-                            Id = 1001,
+                            Id = "h",
                             apellido = "ramirez",
                             nombre = "Laptop",
                             telefono = 10L,
@@ -60,7 +59,7 @@ namespace __tarea7.Migrations
                         },
                         new
                         {
-                            Id = 1002,
+                            Id = "d",
                             apellido = "ramirez",
                             nombre = "Microsoft Office",
                             telefono = 50L,
@@ -68,7 +67,7 @@ namespace __tarea7.Migrations
                         },
                         new
                         {
-                            Id = 1003,
+                            Id = "t",
                             apellido = "ramirez",
                             nombre = "Lazer Mouse",
                             telefono = 20L,
@@ -76,7 +75,7 @@ namespace __tarea7.Migrations
                         },
                         new
                         {
-                            Id = 1004,
+                            Id = "g",
                             apellido = "ramirez",
                             fecahDosis1 = "f",
                             fecahDosis2 = "f",

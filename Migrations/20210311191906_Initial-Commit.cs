@@ -10,8 +10,7 @@ namespace __tarea7.Migrations
                 name: "Product",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "INTEGER", nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true),
+                    Id = table.Column<string>(type: "TEXT", nullable: false),
                     nombre = table.Column<string>(type: "TEXT", nullable: true),
                     apellido = table.Column<string>(type: "TEXT", nullable: true),
                     telefono = table.Column<long>(type: "INTEGER", nullable: false),
@@ -29,22 +28,22 @@ namespace __tarea7.Migrations
             migrationBuilder.InsertData(
                 table: "Product",
                 columns: new[] { "Id", "apellido", "fecahDosis1", "fecahDosis2", "fechaNacimiento", "nombre", "provincia", "telefono", "tipoVacuna" },
-                values: new object[] { 1001, "ramirez", null, null, null, "Laptop", null, 10L, "This is a best gaming laptop" });
+                values: new object[] { "h", "ramirez", null, null, null, "Laptop", null, 10L, "This is a best gaming laptop" });
 
             migrationBuilder.InsertData(
                 table: "Product",
                 columns: new[] { "Id", "apellido", "fecahDosis1", "fecahDosis2", "fechaNacimiento", "nombre", "provincia", "telefono", "tipoVacuna" },
-                values: new object[] { 1002, "ramirez", null, null, null, "Microsoft Office", null, 50L, "This is a Office Application" });
+                values: new object[] { "d", "ramirez", null, null, null, "Microsoft Office", null, 50L, "This is a Office Application" });
 
             migrationBuilder.InsertData(
                 table: "Product",
                 columns: new[] { "Id", "apellido", "fecahDosis1", "fecahDosis2", "fechaNacimiento", "nombre", "provincia", "telefono", "tipoVacuna" },
-                values: new object[] { 1003, "ramirez", null, null, null, "Lazer Mouse", null, 20L, "The mouse that works on all surface" });
+                values: new object[] { "t", "ramirez", null, null, null, "Lazer Mouse", null, 20L, "The mouse that works on all surface" });
 
             migrationBuilder.InsertData(
                 table: "Product",
                 columns: new[] { "Id", "apellido", "fecahDosis1", "fecahDosis2", "fechaNacimiento", "nombre", "provincia", "telefono", "tipoVacuna" },
-                values: new object[] { 1004, "ramirez", "f", "f", "a", "USB Storage", "c", 20L, "To store 256GB of data" });
+                values: new object[] { "g", "ramirez", "f", "f", "a", "USB Storage", "c", 20L, "To store 256GB of data" });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

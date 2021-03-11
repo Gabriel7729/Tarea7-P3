@@ -31,10 +31,10 @@ namespace __tarea7.Data
         {
             return new List<vacunados>
             {
-                new   vacunados { Id = 1001, nombre = "Laptop", apellido = "ramirez", telefono = 10, tipoVacuna ="This is a best gaming laptop"},
-                new vacunados { Id = 1002, nombre = "Microsoft Office", apellido = "ramirez", telefono = 50, tipoVacuna ="This is a Office Application"},
-                new vacunados { Id = 1003, nombre = "Lazer Mouse", apellido = "ramirez", telefono = 20, tipoVacuna ="The mouse that works on all surface"},
-              new vacunados { Id = 1004, nombre = "USB Storage", apellido = "ramirez", telefono = 20, tipoVacuna ="To store 256GB of data", fechaNacimiento ="a",provincia= "c",fecahDosis1="f",fecahDosis2 = "f"}
+                new   vacunados { Id = "h", nombre = "Laptop", apellido = "ramirez", telefono = 10, tipoVacuna ="This is a best gaming laptop"},
+                new vacunados { Id = "d", nombre = "Microsoft Office", apellido = "ramirez", telefono = 50, tipoVacuna ="This is a Office Application"},
+                new vacunados { Id = "t", nombre = "Lazer Mouse", apellido = "ramirez", telefono = 20, tipoVacuna ="The mouse that works on all surface"},
+              new vacunados { Id = "g", nombre = "USB Storage", apellido = "ramirez", telefono = 20, tipoVacuna ="To store 256GB of data", fechaNacimiento ="a",provincia= "c",fecahDosis1="f",fecahDosis2 = "f"}
             };
         }
         #endregion

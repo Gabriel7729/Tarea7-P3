@@ -1,0 +1,177 @@
+﻿@page "/anular"
+@using System.Net.Http;
+@using System.Net.Http.Json;
+@using Data;
+@inject vacunadosServices service
+
+<div class="text-center alert alert-info">
+    <h4>Anular registro</h4>
+</div>
+
+<div class="container">
+    <div class="row">
+        <!--col1-->
+        <div class="col-md-6  border rounded" style="background-color: #d9feff; margin-bottom:100px">
+            <div class="text-center">
+                <label style="margin:15px;"><strong>Ingrese la cedula:</strong> </label>
+                <input type="text" class="form-check form-control" @bind="@cedula" />
+                <button class="btn btn-primary" @onclick="@buscarPersona" style="margin-top:5px; margin:20px;">Verificar</button>
+            </div>
+        </div>
+        @if (estaRegistrado == true)
+        {
+            <div class="col-md-6  border rounded" style="background-color: #d9feff; margin-bottom:100px">
+
+                @foreach (var produc in Products)
+                {
+                    if (cedula == produc.Id)
+                    {
+                        <div class="alert alert-success" style="margin-top:10px;">
+                            <strong>Nombre: @produc.nombre @produc.apellido</strong><br />
+                            <strong>Tipo de vacuna: @produc.tipoVacuna</strong><br />
+                            <strong>Provincia:  @produc.provincia</strong>
+                        </div>
+
+
+                        <div class="text-center" style="margin-top:10px;">
+
+                            <button class="btn btn-danger" @onclick="(() => DeleteProduct(produc))">Eliminar del registro de vacunas</button>
+                        </div>
+                    }
+                }
+            </div>
+        }
+        <div class="col-md-12">
+            <p class="alert alert-warning"><strong>Status: </strong>@status</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+@code {
+    public class Persona
+    {
+        public string Cedula { get; set; }
+        public string Nombres { get; set; }
+        public string Apellido1 { get; set; }
+        public string Apellido2 { get; set; }
+        public string FechaNacimiento { get; set; }
+        public string LugarNacimiento { get; set; }
+        public int IDCategoria { get; set; }
+        public string IdSexo { get; set; }
+        public string IdEstadoCivil { get; set; }
+        public int IdOcupacion { get; set; }
+        public int IDNacionalidad { get; set; }
+        public int IDMunicipio { get; set; }
+        public int IDColegio { get; set; }
+        public object IDCausaCancelacion { get; set; }
+        public string IDEstatus { get; set; }
+        public object EstatusCedulaAzul { get; set; }
+        public object CedulaAnterior { get; set; }
+        public string mun_ced { get; set; }
+        public string seq_ced { get; set; }
+        public string ver_ced { get; set; }
+        public object V2004 { get; set; }
+        public object V2008 { get; set; }
+        public object V2012 { get; set; }
+        public object V2016 { get; set; }
+        public object PLD { get; set; }
+        public object PRD { get; set; }
+        public object PRSC { get; set; }
+        public object PRM { get; set; }
+        public object Multiplicador_NombreCompleto { get; set; }
+        public object Multiplicador_Cedula { get; set; }
+        public object Simpatia_Descripcion { get; set; }
+        public object Ilocalizable { get; set; }
+        public object Apodo { get; set; }
+        public object PadronLF { get; set; }
+        public bool ok { get; set; }
+        public string foto { get; set; }
+    }
+    Persona resultado = null;
+    String cedula;
+    bool consulta = false;
+    bool estaRegistrado = false;
+    String status = "Sin datos";
+
+
+    static readonly HttpClient http = new HttpClient();
+    async Task buscarPersona()
+    {
+        resultado = await http.GetFromJsonAsync<Persona>("https://api.adamix.net/apec/cedula/" + cedula);
+
+        foreach (var data in Products)
+        {
+
+            if (cedula == data.Id)
+            {
+                estaRegistrado = true;
+                status = "Registro encontrado";
+            }
+        }
+
+        //fin veridicacion
+
+        if (resultado.ok)
+        {
+            consulta = true;
+            if (estaRegistrado == false)
+            {
+                status = "Esta persona no se encuentra registrada";
+            }
+        }
+        else
+        {
+            status = "No se encontraron registro con esta cedula";
+        }
+
+    }
+
+
+
+    List<vacunados> Products = new List<vacunados>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await RefreshProducts();
+    }
+
+    private async Task RefreshProducts()
+    {
+        Products = await service.GetProductAsync();
+    }
+
+
+    public vacunados NewProduct { get; set; } = new vacunados();
+
+    private async Task AddNewProduct()
+    {
+
+        await service.AddProductAsync(NewProduct);
+        NewProduct = new vacunados();
+        await RefreshProducts();
+    }
+
+    vacunados UpdateProduct = new vacunados();
+    private void SetProductForUpdate(vacunados product)
+    {
+        UpdateProduct = product;
+    }
+
+    private async Task UpdateProductData()
+    {
+        await service.UpdateProductAsync(UpdateProduct);
+        await RefreshProducts();
+    }
+
+    private async Task DeleteProduct(vacunados product)
+    {
+        cedula = "";
+        status = "Registro eliminado";
+        await service.DeleteProductAsync(product);
+        await RefreshProducts();
+    }
+
+}

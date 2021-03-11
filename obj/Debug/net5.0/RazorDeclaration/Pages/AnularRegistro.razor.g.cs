@@ -76,28 +76,28 @@ using __tarea7.Shared;
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\LUIS ANTONIO DE AZA\Desktop\clon\Tarea7-P3\Pages\RegistrarVacuna.razor"
+#line 2 "C:\Users\LUIS ANTONIO DE AZA\Desktop\clon\Tarea7-P3\Pages\AnularRegistro.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\LUIS ANTONIO DE AZA\Desktop\clon\Tarea7-P3\Pages\RegistrarVacuna.razor"
+#line 3 "C:\Users\LUIS ANTONIO DE AZA\Desktop\clon\Tarea7-P3\Pages\AnularRegistro.razor"
 using System.Net.Http.Json;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\LUIS ANTONIO DE AZA\Desktop\clon\Tarea7-P3\Pages\RegistrarVacuna.razor"
+#line 4 "C:\Users\LUIS ANTONIO DE AZA\Desktop\clon\Tarea7-P3\Pages\AnularRegistro.razor"
 using Data;
 
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/")]
-    public partial class RegistrarVacuna : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/anular")]
+    public partial class AnularRegistro : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -105,9 +105,8 @@ using Data;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 141 "C:\Users\LUIS ANTONIO DE AZA\Desktop\clon\Tarea7-P3\Pages\RegistrarVacuna.razor"
+#line 53 "C:\Users\LUIS ANTONIO DE AZA\Desktop\clon\Tarea7-P3\Pages\AnularRegistro.razor"
        
-
     public class Persona
     {
         public string Cedula { get; set; }
@@ -147,127 +146,48 @@ using Data;
         public bool ok { get; set; }
         public string foto { get; set; }
     }
-
-    bool consulta = false;
-    bool existe = false;
-    bool vc2 = false;
-    bool tieneLas2 = false;
-    bool BotonAgregar = false;
-
-    String cedula;
-    String tipoDeVacuna = "-- Sin seleccionar --";
-    String provincia = "-- Sin seleccionar --";
-    DateTime fechaDosis1;
-    long telefono;
-
-    //Registrados
-    String FechaD1Registrado;
-    long TelefonoR;
-    String vacunaTipoR;
-    bool registroAgregado;
-
-    //Segunda fecha
-    DateTime fechaDosis2;
-
     Persona resultado = null;
-    String ced;
+    String cedula;
+    bool consulta = false;
+    bool estaRegistrado = false;
+    String status = "Sin datos";
 
 
     static readonly HttpClient http = new HttpClient();
-
-    async Task dosis2()
-    {
-        vc2 = true;
-        existe = false;
-        resultado = await http.GetFromJsonAsync<Persona>("https://api.adamix.net/apec/cedula/" + cedula);
-        string fecha = fechaDosis2.ToString("dd/MM/yyyy");
-
-        //Verifica si esta cedula esta registrada
-        foreach (var data in Products)
-        {
-            if (cedula == data.Id)
-            {
-                SetProductForUpdate(data);
-                UpdateProduct.fecahDosis2 = fecha;
-                UpdateProductData();
-                return;
-            }
-        }
-
-    }
-
     async Task buscarPersona()
     {
         resultado = await http.GetFromJsonAsync<Persona>("https://api.adamix.net/apec/cedula/" + cedula);
 
-        registroAgregado = false;
-        //Verifica si esta cedula esta registrada
         foreach (var data in Products)
         {
-            if(cedula == data.Id)
+
+            if (cedula == data.Id)
             {
-                if(data.fecahDosis2 != "Sin recibir")
-                {
-                    tieneLas2 = true;
-                    return;
-                }
-                existe = true;
-                FechaD1Registrado = data.fecahDosis1;
-                vacunaTipoR = data.tipoVacuna;
-                TelefonoR = data.telefono;
-                SetProductForUpdate(data);
-                UpdateProductData();
-                return;
+                estaRegistrado = true;
+                status = "Registro encontrado";
             }
         }
-
-
 
         //fin veridicacion
 
         if (resultado.ok)
         {
             consulta = true;
+            if (estaRegistrado == false)
+            {
+                status = "Esta persona no se encuentra registrada";
+            }
         }
         else
         {
-            ced = "Cedula no encontrada";
+            status = "No se encontraron registro con esta cedula";
         }
 
     }
 
-    public void tipoVacuna(ChangeEventArgs e)
-    {
-        tipoDeVacuna = e.Value.ToString();
-    }
-    public void provincias(ChangeEventArgs e)
-    {
-        provincia = e.Value.ToString();
-    }
 
-    public void nuevoVacunado()
-    {
-        registroAgregado = true;
-        string fecha = fechaDosis1.ToString("dd/MM/yyyy");
-        NewProduct.nombre = resultado.Nombres;
-        NewProduct.apellido = resultado.Apellido1 + " " + resultado.Apellido2;
-        NewProduct.fechaNacimiento = resultado.FechaNacimiento;
-        NewProduct.tipoVacuna = tipoDeVacuna;
-        NewProduct.provincia = provincia;
-        NewProduct.fecahDosis1 = fecha;
-        NewProduct.fecahDosis2 = "Sin recibir";
-        NewProduct.telefono = telefono;
-        NewProduct.Id = cedula;
-        AddNewProduct();
-        consulta = false;
-        cedula = "";
-    }
 
-    //Agregar,Altualizar
-
-    List<vacunados>
-    Products = new List<vacunados>
-        ();
+    List<vacunados> Products = new List<vacunados>();
 
     protected override async Task OnInitializedAsync()
     {
@@ -284,7 +204,7 @@ using Data;
 
     private async Task AddNewProduct()
     {
-        BotonAgregar = false;
+
         await service.AddProductAsync(NewProduct);
         NewProduct = new vacunados();
         await RefreshProducts();
@@ -304,9 +224,12 @@ using Data;
 
     private async Task DeleteProduct(vacunados product)
     {
+        cedula = "";
+        status = "Registro eliminado";
         await service.DeleteProductAsync(product);
         await RefreshProducts();
     }
+
 
 #line default
 #line hidden

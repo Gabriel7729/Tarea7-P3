@@ -1,5 +1,4 @@
-﻿@page "/"
-@using Data
+﻿@using Data
 @inject vacunadosServices service
 
 <div class="container">
@@ -23,25 +22,25 @@
             <tbody>
                 @if (Products.Any())
                 {
-    @foreach (var product in Products)
-    {
-<tr @onclick="(() => SetProductForUpdate(product))">
-    <td>@product.Id</td>
-    <td>@product.nombre</td>
-    <td>@product.apellido</td>
-    <td>@product.telefono</td>
-    <td>@product.fechaNacimiento</td>
-    <td>@product.tipoVacuna</td>
-    <td>@product.fecahDosis1</td>
-    <td>@product.fecahDosis2</td>
-    <td>@product.provincia</td>
-    <td><button class="btn btn-danger" @onclick="(() => DeleteProduct(product))">Delete</button></td>
-</tr>
-} }
-else
-{
-<tr><td colspan="6"><strong>No products available</strong></td></tr>
-}
+                    @foreach (var product in Products)
+                    {
+                        <tr @onclick="(() => SetProductForUpdate(product))">
+                            <td>@product.Id</td>
+                            <td>@product.nombre</td>
+                            <td>@product.apellido</td>
+                            <td>@product.telefono</td>
+                            <td>@product.fechaNacimiento</td>
+                            <td>@product.tipoVacuna</td>
+                            <td>@product.fecahDosis1</td>
+                            <td>@product.fecahDosis2</td>
+                            <td>@product.provincia</td>
+                            <td><button class="btn btn-danger" @onclick="(() => DeleteProduct(product))">Delete</button></td>
+                        </tr>
+                    } }
+                else
+                {
+                    <tr><td colspan="6"><strong>No products available</strong></td></tr>
+                }
             </tbody>
         </table>
     </div>
