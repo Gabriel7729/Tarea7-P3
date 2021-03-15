@@ -223,8 +223,6 @@ C:\Users\Lusan\Desktop\Tarea7-P3\obj\Debug\net5.0\__tarea7.MvcApplicationPartsAs
 C:\Users\Lusan\Desktop\Tarea7-P3\obj\Debug\net5.0\__tarea7.RazorComponent.input.cache
 C:\Users\Lusan\Desktop\Tarea7-P3\obj\Debug\net5.0\RazorDeclaration\App.razor.g.cs
 C:\Users\Lusan\Desktop\Tarea7-P3\obj\Debug\net5.0\RazorDeclaration\Pages\ConsultaVacunados.razor.g.cs
-C:\Users\Lusan\Desktop\Tarea7-P3\obj\Debug\net5.0\RazorDeclaration\Pages\Counter.razor.g.cs
-C:\Users\Lusan\Desktop\Tarea7-P3\obj\Debug\net5.0\RazorDeclaration\Pages\FetchData.razor.g.cs
 C:\Users\Lusan\Desktop\Tarea7-P3\obj\Debug\net5.0\RazorDeclaration\Pages\Index.razor.g.cs
 C:\Users\Lusan\Desktop\Tarea7-P3\obj\Debug\net5.0\RazorDeclaration\Pages\RegistrarVacuna.razor.g.cs
 C:\Users\Lusan\Desktop\Tarea7-P3\obj\Debug\net5.0\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
@@ -238,8 +236,6 @@ C:\Users\Lusan\Desktop\Tarea7-P3\obj\Debug\net5.0\__tarea7.TagHelpers.output.cac
 C:\Users\Lusan\Desktop\Tarea7-P3\obj\Debug\net5.0\__tarea7.RazorCoreGenerate.cache
 C:\Users\Lusan\Desktop\Tarea7-P3\obj\Debug\net5.0\Razor\App.razor.g.cs
 C:\Users\Lusan\Desktop\Tarea7-P3\obj\Debug\net5.0\Razor\Pages\ConsultaVacunados.razor.g.cs
-C:\Users\Lusan\Desktop\Tarea7-P3\obj\Debug\net5.0\Razor\Pages\Counter.razor.g.cs
-C:\Users\Lusan\Desktop\Tarea7-P3\obj\Debug\net5.0\Razor\Pages\FetchData.razor.g.cs
 C:\Users\Lusan\Desktop\Tarea7-P3\obj\Debug\net5.0\Razor\Pages\Index.razor.g.cs
 C:\Users\Lusan\Desktop\Tarea7-P3\obj\Debug\net5.0\Razor\Pages\RegistrarVacuna.razor.g.cs
 C:\Users\Lusan\Desktop\Tarea7-P3\obj\Debug\net5.0\Razor\Shared\SurveyPrompt.razor.g.cs
@@ -534,3 +530,7 @@ C:\Users\a\Downloads\ITLA-seaon 6\Prog 3\T7\Tarea7-P3\obj\Debug\net5.0\__tarea7.
 C:\Users\a\Downloads\ITLA-seaon 6\Prog 3\T7\Tarea7-P3\obj\Debug\net5.0\ref\__tarea7.dll
 C:\Users\a\Downloads\ITLA-seaon 6\Prog 3\T7\Tarea7-P3\obj\Debug\net5.0\__tarea7.pdb
 C:\Users\a\Downloads\ITLA-seaon 6\Prog 3\T7\Tarea7-P3\obj\Debug\net5.0\__tarea7.genruntimeconfig.cache
+C:\Users\Lusan\Desktop\Tarea7-P3\obj\Debug\net5.0\RazorDeclaration\Pages\AnularRegistro.razor.g.cs
+C:\Users\Lusan\Desktop\Tarea7-P3\obj\Debug\net5.0\Razor\Pages\AnularRegistro.razor.g.cs
+C:\Users\Lusan\Desktop\Tarea7-P3\obj\Debug\net5.0\RazorDeclaration\Pages\PaginaPrincipal.razor.g.cs
+C:\Users\Lusan\Desktop\Tarea7-P3\obj\Debug\net5.0\Razor\Pages\PaginaPrincipal.razor.g.cs

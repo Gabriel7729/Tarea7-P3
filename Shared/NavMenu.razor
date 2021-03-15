@@ -1,28 +1,12 @@
-﻿<div class="top-row pl-4 navbar navbar-dark">
-    <a class="navbar-brand" href="">Vacunate RD</a>
-    <button class="navbar-toggler" @onclick="ToggleNavMenu">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-</div>
+﻿
 
-<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
-    <ul class="nav flex-column">
-        <li class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="oi oi-plus" aria-hidden="true"></span> Registro de vacunas
-            </NavLink>
-        </li>
-        <li class="nav-item px-3">
-            <NavLink class="nav-link" href="ConsultaVacunados">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Consulta vacunados
-            </NavLink>
-        </li>
-        <li class="nav-item px-3">
-            <NavLink class="nav-link" href="anular">
-                <span class="oi oi-trash" aria-hidden="true"></span>Anular registros
-            </NavLink>
-        </li>
-    </ul>
+<div id="mySidebar" class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
+    <center>
+        <a href=""><i class="material-icons">home</i><span class="icon-text">Home</span></a><br />
+    </center>
+    <a href="RegistrarVacuna"><i class="material-icons">add_circle_outline</i><span class="icon-text">Reg. Vacun.</span></a><br />
+    <a href="ConsultaVacunados"><i class="material-icons">list_alt</i><span class="icon-text">List. Vacun.</span></a><br>
+    <a href="AnularRegistro"><i class="material-icons">person_remove</i><span class="icon-text">Anu. Reg.</span></a>
 </div>
 
 @code {

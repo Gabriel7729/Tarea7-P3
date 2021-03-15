@@ -20,8 +20,28 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" />
     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
 </head>
 <body>
+    <script>
+        var mini = true;
+
+        function toggleSidebar() {
+            if (mini) {
+                console.log("opening sidebar");
+                document.getElementById("mySidebar").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+                this.mini = false;
+            } else {
+                console.log("closing sidebar");
+                document.getElementById("mySidebar").style.width = "85px";
+                document.getElementById("main").style.marginLeft = "85px";
+                this.mini = true;
+            }
+        }
+    </script>
+
     <!--Codigo de Scrupt para el DataTable (osea los filtros).-->
     <script>
         function TestDataTablesAdd(table) {
