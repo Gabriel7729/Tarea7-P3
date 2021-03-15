@@ -52,6 +52,17 @@
                         <option>Vacuna tipo B</option>
                         <option>Vacuna tipo C</option>
                     </select>
+
+                    <label for="exampleFormControlSelect1"> <strong>Cantidades de vacunas : </strong></label>
+                      <div>
+                      <label for="exampleFormControlSelect1"> Tipo A: 150 </label>
+                      </div>
+                      <div>
+                      <label for="exampleFormControlSelect1"> Tipo B: 115 </label>
+                      </div>
+                      <div>
+                      <label for="exampleFormControlSelect1"> Tipo C: 0 </label>
+                      </div>
                 </div>
 
                 //select provincias
@@ -95,12 +106,16 @@
                 </div>
                 BotonAgregar = true;
             }
-            @if (tipoDeVacuna != "-- Sin seleccionar --" && provincia != "-- Sin seleccionar --" && BotonAgregar == true)
+
+
+            @if (tipoDeVacuna != "-- Sin seleccionar --" && tipoDeVacuna != "Vacuna tipo C" && provincia != "-- Sin seleccionar --" && BotonAgregar == true)
             {
-                <center>
-                    <button class="btn btn-success" @onclick="nuevoVacunado" style="margin:20px;">Agregar Registro</button>
-                </center>
+            <center>
+            <button class="btn btn-success" @onclick="nuevoVacunado" style="margin:20px;">Agregar Registro</button>
+            </center>
             }
+
+
         </div>
         <!--col2-->
         <div class="col-md-6">
@@ -191,6 +206,11 @@
     String provincia = "-- Sin seleccionar --";
     DateTime fechaDosis1;
     long telefono;
+    
+    int VacA;
+    int VacB;
+    int  VacC;
+
 
     //Registrados
     String FechaD1Registrado;
